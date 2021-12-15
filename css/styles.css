@@ -23,6 +23,19 @@ button {
 .header {
   background-color: #ececec;
 }
+/* Проверить */
+.header-tel {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+.header-mail {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+.header-mail:hover {
+}
 /* Навигация */
 /* Логтип */
 .logoweb {
@@ -59,6 +72,9 @@ button {
 .button-item {
   letter-spacing: 0.03em;
   background-color: var(--button-background);
+}
+.button-item:hover {
+  color: var(--accent-color);
 }
 /* Основной контент */
 /* Заголовки Портфолио */
@@ -115,6 +131,10 @@ h1 {
 .main--first-section {
   background-color: var(--black-box-color);
 }
+.main-button {
+  letter-spacing: 0.03em;
+  background-color: var(--button-background);
+}
 /* Секция чем мы занимаемся */
 /* Заголовки секции */
 .main-second-title {
@@ -149,9 +169,13 @@ h1 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
+  vertical-align: top;
 }
 /* Текст секции */
 .team-text {
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
+  vertical-align: top;
 }
