@@ -10,12 +10,10 @@
   --background-for-header: #ececec;
 }
 body {
-  background: var(--primary-text-color);
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03px;
-
 }
 a {
   text-decoration: none;
