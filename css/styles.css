@@ -6,6 +6,7 @@
   --button-background: #f5f4fa;
   --white-color: #ffffff;
   --black-box-color: #2f303a;
+  --style-for-footer-contacts: #acacb0;
 }
 body {
   background: var(--primary-text-color);
@@ -13,30 +14,11 @@ body {
   font-family: Roboto, sans-serif;
 }
 /* Общие стили и стили портфолио */
-/*Шрифт заголовки */
 /*Шрифт кнопки (наследование) */
-button {
-  cursor: pointer;
-  font-family: inherit;
-}
 /* Хедер */
 .header {
   background-color: #ececec;
 }
-/* Проверить */
-.header-tel {
-  font-size: 14px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
-}
-.header-mail {
-  font-size: 14px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
-}
-.header-mail:hover {
-}
-/* Навигация */
 /* Логтип */
 .logoweb {
   color: var(--accent-color);
@@ -50,34 +32,63 @@ button {
   font-size: 26px;
   line-height: 1.2;
 }
-/* Навигация по сайту */
+/* Ссылки навигации */
 .header-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
 }
-/* Контакты */
-.header-contacts {
+.header-item:hover,
+.header-item:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  color: var(--accent-color);
+}
+/* Hover для контактов */
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
   color: var(--primary-white-color);
+}
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+.header-mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--primary-white-color);
+}
+.header-mail:hover,
+.header-mail:focus {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--accent-color);
 }
 /* Main contant */
 .main {
   background-color: var(--white-color);
 }
-/* Кнопки */
+/* Кнопки портфолио */
 .button-item {
   letter-spacing: 0.03em;
   background-color: var(--button-background);
+  cursor: pointer;
+  font-family: inherit;
 }
-.button-item:hover {
-  color: var(--accent-color);
+.button-item:hover,
+.button-item:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  cursor: pointer;
+  font-family: inherit;
 }
 /* Основной контент */
-/* Заголовки Портфолио */
+/* Шрифты основного контента портфолио */
 .title {
   font-weight: 700;
   font-size: 18px;
@@ -96,30 +107,56 @@ button {
 }
 /* Вторая часть логотипа футера */
 .footer-logo {
-  color: var(--accent-color);
+  color: var(--white-color);
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.2;
 }
-/* Адрес на карте */
+
+/* Адрес на карте футер */
 .footer-addres {
   font-size: 14px;
   line-height: 1.7;
   color: var(--white-color);
 }
-/* Контактные данные*/
+.footer-addres:hover,
+.footer-addres:focus {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--accent-color);
+}
+/* Контактные данные футер*/
 .footer-tel {
   font-size: 14px;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--style-for-footer-contacts);
 }
 .footer-mail {
   font-size: 14px;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--style-for-footer-contacts);
 }
+.footer-tel:hover,
+.footer-tel:focus {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--accent-color);
+}
+.footer-mail:hover,
+.footer-mail:focus {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--accent-color);
+}
+
 /* Стили главной страницы */
-h1 {
+/* Хедер идентичен странице портфолио */
+/* Основная секция */
+.main--first-section {
+  background-color: var(--black-box-color);
+}
+/* Заголовок */
+.h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3;
@@ -127,14 +164,22 @@ h1 {
   vertical-align: top;
   color: var(--white-color);
 }
-/* Основная секция */
-.main--first-section {
-  background-color: var(--black-box-color);
-}
+/* Кнопка под заголовком */
 .main-button {
   letter-spacing: 0.03em;
   background-color: var(--button-background);
+  cursor: pointer;
+  font-family: inherit;
 }
+.main-button:hover,
+.main-button:focus {
+  letter-spacing: 0.03em;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+
 /* Секция чем мы занимаемся */
 /* Заголовки секции */
 .main-second-title {
@@ -148,6 +193,7 @@ h1 {
   line-height: 1.7;
   color: var(--primary-white-color);
 }
+/* Заголовок секции */
 .main-third-title {
   font-weight: 700;
   font-size: 36px;
@@ -179,3 +225,4 @@ h1 {
   text-align: center;
   vertical-align: top;
 }
+/* footer идентичен портфолио */
