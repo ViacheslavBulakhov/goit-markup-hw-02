@@ -7,17 +7,20 @@
   --white-color: #ffffff;
   --black-box-color: #2f303a;
   --style-for-footer-contacts: #acacb0;
+  --background-for-header: #ececec;
 }
 body {
   background: var(--primary-text-color);
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03px;
 }
 /* Общие стили и стили портфолио */
 /*Шрифт кнопки (наследование) */
 /* Хедер */
 .header {
-  background-color: #ececec;
+  background-color: var(--background-for-header) contact;
 }
 /* Логтип */
 .logoweb {
@@ -34,9 +37,11 @@ body {
 }
 /* Ссылки навигации */
 .header-item {
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 2%;
   color: var(--title-text-color);
 }
 .header-item:hover,
@@ -47,34 +52,30 @@ body {
   color: var(--accent-color);
 }
 /* Hover для контактов */
-.header-tel {
+.header-contact {
+
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.7;
+  letter-spacing: 2%;
   color: var(--primary-white-color);
 }
-.header-tel:hover,
-.header-tel:focus {
+.header-contact:hover,
+.header-contact:focus {
   color: var(--accent-color);
 }
-.header-mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--primary-white-color);
-}
-.header-mail:hover,
-.header-mail:focus {
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--accent-color);
-}
+
 /* Main contant */
 .main {
   background-color: var(--white-color);
 }
 /* Кнопки портфолио */
 .button-item {
+  font family: Roboto;
+  font style: 500;
+  font size: 16px;
+  line-height: 1.8;
   letter-spacing: 0.03em;
   background-color: var(--button-background);
   cursor: pointer;
@@ -113,40 +114,22 @@ body {
   line-height: 1.2;
 }
 
-/* Адрес на карте футер */
-.footer-addres {
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--white-color);
-}
-.footer-addres:hover,
-.footer-addres:focus {
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--accent-color);
-}
 /* Контактные данные футер*/
-.footer-tel {
+.footer-contact {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+  letter-spacing: 3%;
   color: var(--style-for-footer-contacts);
 }
-.footer-mail {
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--style-for-footer-contacts);
-}
-.footer-tel:hover,
-.footer-tel:focus {
+.footer-contact:hover,
+.footer-contact:focus {
   font-size: 14px;
   line-height: 1.7;
   color: var(--accent-color);
 }
-.footer-mail:hover,
-.footer-mail:focus {
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--accent-color);
+.adress{
+  color: var(--white-color);
 }
 
 /* Стили главной страницы */
@@ -156,17 +139,22 @@ body {
   background-color: var(--black-box-color);
 }
 /* Заголовок */
-.h1 {
+.chief-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3;
   text-align: center;
   vertical-align: top;
   color: var(--white-color);
+  text-transform: uppercase;
 }
 /* Кнопка под заголовком */
 .main-button {
-  letter-spacing: 0.03em;
+  font family: Roboto ;
+  font-weight: 700;
+  font size: 16px;
+  line-height: 1.8;
+  letter-spacing: 6%;
   background-color: var(--button-background);
   cursor: pointer;
   font-family: inherit;
@@ -226,3 +214,8 @@ body {
   vertical-align: top;
 }
 /* footer идентичен портфолио */
+
+/* для ценрта кнопки основной страницы */
+.main-first-section {
+  text-align: center;
+}

@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        a {text-decoration: none;}
+    </style>
 </head>
 <body>
 <!-- Шапка страницы -->
@@ -23,14 +26,16 @@
     </nav>
     <!-- Контакты -->
     <ul class="header-contacts">
-        <li><a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        <li><a class="header-mail" href="mailto:info@devstudio.com " title="info@devstudio.com"> info@devstudio.com </a></li>
+        <li><a class="header-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li><a class="header-contact" href="mailto:info@devstudio.com " title="info@devstudio.com"> info@devstudio.com </a></li>
     </ul>
 </header>
 <!-- Портфолио  -->
 <main class="main">
     <!-- Кнопки -->
+
     <section class="portfolio-button">
+        <h1>Портфолио</h1>
         <ul class="button-list">
             <li><button type="button" class="button-item">Все</button></li>
             <li><button type="button" class="button-item">Веб Сайты</button></li>
@@ -42,14 +47,14 @@
         <ul class="main-list">
             <li class="main-item">
                 <a href="">
-                    <img src="./css/images/portfolio-notebook.jpg" alt="Ноутбук" width="370">
+                    <img src="./images/portfolio-notebook.jpg" alt="Ноутбук" width="370">
                     <h2 class="title">Технокряк</h2>
                     <p class="text">Веб-сайт</p>
                 </a>
             </li>
             <li class="main-item">
                 <a href="">
-                    <img src="./css/images/portfolio-basket.jpg" alt="Постер игры в баскетбол" width="370">
+                    <img src="./images/portfolio-basket.jpg" alt="Постер игры в баскетбол" width="370">
                     <h2 class="title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
                     <p class="text">Дизайн</p>
                 </a>
@@ -57,7 +62,7 @@
             </li>
             <li class="main-item">
                 <a href=""> 
-                <img src="./css/images/portfolio-logo.jpg" alt="Логотип ресторана" width="370">
+                <img src="./images/portfolio-logo.jpg" alt="Логотип ресторана" width="370">
                 <h2 class="title" lang="en" >Seafood</h2>
                 <p class="text">Приложение</p>
                 </a>
@@ -65,7 +70,7 @@
             </li>
             <li class="main-item">
                 <a href="/">
-                    <img src="./css/images/portfolio-music.jpg" alt="Наушники" width="370">
+                    <img src="./images/portfolio-music.jpg" alt="Наушники" width="370">
                     <h2 class="title">Проект <span lang="en">Prime</span></h2>
                     <p class="text">Маркетинг</p>
                 </a>
@@ -73,7 +78,7 @@
             </li>
             <li class="main-item">
                 <a href="/">
-                    <img src="./css/images/portfolio-cube.jpg" alt="Коробка" width="370">
+                    <img src="./images/portfolio-cube.jpg" alt="Коробка" width="370">
                     <h2 class="title">Проект <span lang="en">Boxes</span></h2>
                     <p class="text">Приложение</p>
                 </a>
@@ -81,7 +86,7 @@
             </li>
             <li class="main-item">
                 <a href="/">
-                    <img src="./css/images/portfolio-screen.jpg" alt="Монитор" width="370">
+                    <img src="./images/portfolio-screen.jpg" alt="Монитор" width="370">
                     <h2 class="title" lang="en" >Inspiration has no Borders</h2>
                     <p class="text">Веб-сайт</p>
                 </a>
@@ -89,7 +94,7 @@
             </li>
             <li class="main-item">
                 <a href="/">
-                    <img src="./css/images/portfolio-book.jpg" alt="Книга" width="370">
+                    <img src="./images/portfolio-book.jpg" alt="Книга" width="370">
                     <h2 class="title">Издание <span lang="en">Limited Edition</span></h2>
                     <p class="text">Дизайн</p>
                 </a>
@@ -97,7 +102,7 @@
             </li>
             <li class="main-item">
                 <a href="/">
-                    <img src="./css/images/portfolio-letters.jpg" alt="Бирка" width="370">
+                    <img src="./images/portfolio-letters.jpg" alt="Бирка" width="370">
                     <h2 class="title">Проект LAB</h2>
                     <p class="text">Маркетинг</p>
                 </a>
@@ -105,7 +110,7 @@
             </li>
             <li class="main-item">
                 <a href="/">
-                    <img src="./css/images/portfolio-business.jpg" alt="Вебсайт" width="370">
+                    <img src="./images/portfolio-business.jpg" alt="Вебсайт" width="370">
                     <h2 class="title" lang="en" >Growing Business</h2>
                     <p class="text">Приложение</p>
                 </a>
@@ -117,11 +122,11 @@
 <!-- footer -->
 <footer class="footer">
     <a href="/"> <span class="logoweb">Web</span> <span class="footer-logo">studio</span> </a>
-    <address class="address">
+    <address class="address-section">
         <ul class="footer-list">
-            <li><a href="/" class="footer-addres"> г.Киев, пр-т Леси Украинки,26 </a></li>
-            <li><a href="tel:+380991111111" class="footer-tel">+38 099 111 11 11</a></li>
-            <li><a href="mailto:info@example.com" title="info@example.com" class="footer-mail"> info@example.com </a></li>
+            <li><a href="/" class="footer-contact adress"> г.Киев, пр-т Леси Украинки,26 </a></li>
+            <li><a href="tel:+380991111111" class="footer-contact">+38 099 111 11 11</a></li>
+            <li><a href="mailto:info@example.com" title="info@example.com" class="footer-contact"> info@example.com </a></li>
         </ul>
     </address>
 </footer>
