@@ -138,7 +138,7 @@ a {
 /* Стили главной страницы */
 /* Хедер идентичен странице портфолио */
 /* Основная секция */
-.main--first-section {
+.main-first-section {
   background-color: var(--black-box-color);
 }
 /* Заголовок */
