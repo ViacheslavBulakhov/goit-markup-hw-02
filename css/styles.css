@@ -19,7 +19,6 @@ a {
   text-decoration: none;
 }
 /* Общие стили и стили портфолио */
-/*Шрифт кнопки (наследование) */
 /* Хедер */
 .header {
   background-color: var(--background-for-header) contact;
@@ -41,7 +40,6 @@ a {
 .header-item {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 2%;
   color: var(--title-text-color);
@@ -49,7 +47,6 @@ a {
 .header-item:hover,
 .header-item:focus {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   color: var(--accent-color);
 }
@@ -57,7 +54,6 @@ a {
 .header-contact {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.7;
   letter-spacing: 2%;
   color: var(--primary-white-color);
@@ -73,9 +69,9 @@ a {
 }
 /* Кнопки портфолио */
 .button-item {
-  font family: Roboto;
-  font style: 500;
-  font size: 16px;
+  font-family: Roboto;
+  font-style: 500;
+  font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
   background-color: var(--button-background);
@@ -118,18 +114,16 @@ a {
 /* Контактные данные футер*/
 .footer-contact {
   font-style: normal;
-  font-size: 14px;
   line-height: 1.7;
   letter-spacing: 3%;
   color: var(--style-for-footer-contacts);
 }
 .footer-contact:hover,
 .footer-contact:focus {
-  font-size: 14px;
   line-height: 1.7;
   color: var(--accent-color);
 }
-.adress{
+.adress {
   color: var(--white-color);
 }
 
@@ -151,9 +145,9 @@ a {
 }
 /* Кнопка под заголовком */
 .main-button {
-  font family: Roboto ;
+  font-family: Roboto;
   font-weight: 700;
-  font size: 16px;
+  font-size: 16px;
   line-height: 1.8;
   letter-spacing: 6%;
   background-color: var(--button-background);
@@ -173,7 +167,6 @@ a {
 /* Заголовки секции */
 .main-second-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.1;
 }
 /* Текст секции */
