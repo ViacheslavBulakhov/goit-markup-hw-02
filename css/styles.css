@@ -23,6 +23,9 @@ body {
 .link {
   text-decoration: none;
 }
+.ul-li {
+  list-style: none;
+}
 /* Хедер */
 /* Логтип */
 .logoweb {
@@ -45,6 +48,7 @@ body {
   line-height: 1.14;
   letter-spacing: 2%;
   color: var(--title-text-color);
+  margin-right: 50px;
 }
 .header-item:hover,
 .header-item:focus {
@@ -60,17 +64,78 @@ body {
   line-height: 1.7;
   letter-spacing: 2%;
   color: var(--primary-white-color);
+  margin-right: 50px;
 }
 .header-contact:hover,
 .header-contact:focus {
   color: var(--accent-color);
 }
 
+/* Позиционирование Хедер */
+.nav {
+  display: flex;
+  align-items: center;
+}
+.logo-flex {
+  margin-right: 93px;
+  padding-left: 215px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 215px;
+}
+
+.header-list {
+  display: flex;
+}
+
+/* Позиционирование Main */
+.button-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 94px 494px 0px 495px;
+}
+.main-list {
+  padding: 0px 0px 94px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.section {
+  display: flex;
+  justify-content: center;
+}
+.main-item {
+  display: flex;
+  align-items: center;
+  margin: 30px 30px 30px 30px;
+}
+
+/* Позиционирование Футер */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+.logo-footer {
+  margin-bottom: 20px;
+  margin-left: 215px;
+}
+.footer-list {
+  padding: 0px 0px 60px 215px;
+}
+
 /* Main contant */
 .main {
   background-color: var(--white-color);
 }
-
 /* Скрытый заголовок */
 .visually-hidden {
   position: absolute;
@@ -93,6 +158,7 @@ body {
   background-color: var(--button-background);
   cursor: pointer;
   font-family: inherit;
+  margin-right: 8px;
 }
 .button-item:hover,
 .button-item:focus {
@@ -136,6 +202,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--style-for-footer-contacts);
+  margin-bottom: 9px;
 }
 .footer-contact:hover,
 .footer-contact:focus {
@@ -231,3 +298,25 @@ body {
 .main-first-section {
   text-align: center;
 }
+/* Расположение елементов */
+
+/* 
+}
+.main-list {
+  padding: 94px 0 94 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+} */
+
+/* .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid #188ce8;
+
+на всякий случай
+
+} */

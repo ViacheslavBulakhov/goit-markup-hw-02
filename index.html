@@ -12,20 +12,24 @@
 <body>
     <!-- Шапка Страницы -->
 <header class="header">
-    <!-- Навигация сайта -->
-    <nav class="header-nav" >
-        <a href="/" class="link"> <span class="logoweb">Web</span> <span class="logo">studio</span> </a>
-    <ul class="header-list">
-        <li> <a href="./index.html" class="header-item link" >Студия</a></li>
-        <li> <a href="./portfolio.html" class="header-item link">Портфолио</a></li>
-        <li> <a href="/" class="header-item link">Контакты</a></li>
-    </ul>
-    </nav>
-    <!-- Контакты -->
-    <ul class="header-contacts">
-        <li><a class="header-contact link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        <li><a class="header-contact link" href="mailto:info@devstudio.com " title="info@devstudio.com"> info@devstudio.com </a></li>
-    </ul>
+    <div class="header-container">
+        <!-- Навигация сайта -->
+        <nav class="nav">
+            <a href="/" class="link logo-flex"> <span class="logoweb">Web</span> <span class="logo">studio</span> </a>
+            <ul class="header-list ul-li">
+                <li> <a href="./index.html" class="header-item link">Студия</a></li>
+                <li> <a href="./portfolio.html" class="header-item link">Портфолио</a></li>
+                <li> <a href="/" class="header-item link">Контакты</a></li>
+            </ul>
+        </nav>
+        <!-- Контакты -->
+        <ul class="header-contacts ul-li">
+            <li><a class="header-contact link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="header-contact link" href="mailto:info@devstudio.com " title="info@devstudio.com"> info@devstudio.com
+                </a></li>
+        </ul>
+    </div>
+
 </header>
 <!-- Основной материал -->
 <main class="main">
@@ -36,7 +40,7 @@
         </section>
     </div>
 <section class="main-second-section">
-    <ul class="main-second-list">
+    <ul class="main-second-list ul-li">
         <li class="main-second-item">
             <h2 class="main-second-title">Внимание к деталям</h2>
             <p class="main-second-text">Идейные соображения, а также <br /> начало повседневной работы по <br /> формированию позиции.</p>
@@ -58,7 +62,7 @@
 <!-- Секция чем мы занимаемся -->
 <section class="main-third-section">
     <h2 class="main-third-title">Чем мы занимаемся</h2>
-    <ul class="main-third-list">
+    <ul class="main-third-list ul-li">
         <li class="main-third-item"> <img src="./images/keyboard.jpg" alt="keyboard" width="370"> </li>
         <li class="main-third-item"> <img src="./images/phone.jpg" alt="phone" width="370"> </li>
         <li class="main-third-item"> <img src="./images/screen.jpg" alt="screen" width="370"> </li>
@@ -67,7 +71,7 @@
 <!-- Секция наша команда -->
 <section class="team-section">
     <h2 class="team">Наша команда</h2>
-    <ul class="team-list">
+    <ul class="team-list ul-li">
         <li class="team-item">
             <img src="./images/product.jpg" alt="Игорь Демяненко" width="270">
             <h3 class="team-title">Игорь Демяненко</h3>
@@ -95,7 +99,7 @@
 <footer class="footer" >
     <a href="/" class="link"> <span class="logoweb">Web</span> <span class="footer-logo">studio</span> </a>
     <address class="address-section">
-        <ul class="footer-list">
+        <ul class="footer-list ul-li">
             <li><a href="/" class="footer-contact adress link" > г.Киев, пр-т Леси Украинки,26 </a></li>
             <li><a href="tel:+380991111111" class="footer-contact link">+38 099 111 11 11</a></li>
             <li><a href="mailto:info@example.com" title="info@example.com" class="footer-contact link"> info@example.com </a></li>
